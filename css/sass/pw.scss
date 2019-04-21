@@ -1,0 +1,12 @@
+.menu{
+    float: left;
+    background: url('/css/images/header_desktop.png') no-repeat;
+    width: 100%;
+    li{
+        float: left;
+        a{
+            display: block;
+            padding: 5px;
+        }
+    }
+}

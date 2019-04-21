@@ -1,0 +1,33 @@
+$headerbg:#000;
+$brown:#3D1101;
+$font-small:14px;
+$font-normal:16px;
+$font-large:24px;
+$large:url("../images/header_desktop.png") no-repeat center;
+$small:url("../images/header_mobile.png");
+$google:url("../images/google.png");
+$twitter:url("../images/twitter.png");
+$fb:url("../images/facebook.png");
+@mixin clearfix() {
+    &::after {
+      display: block;
+      clear: both;
+      content: "";
+    }
+  }
+@mixin hide-text()
+{
+    overflow: hidden;
+    white-space: nowrap;
+    text-indent: 110%; 
+}
+@mixin header-background($bg,$width,$height)
+{
+    background:$bg;
+    width: $width;
+    height: $height;
+}
+@mixin footer-icon($gtf)
+{
+  background: $gtf;
+}
